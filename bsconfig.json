@@ -1,0 +1,41 @@
+{
+  "name": "ForwardRef",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "flow",
+    "module": "es6",
+    "shims": {
+      "Js": "Js",
+      "Obj": "Obj",
+      "React": "ReactShim",
+      "ReactEvent": "ReactEvent",
+      "ReasonPervasives": "ReasonPervasives",
+      "ReasonReact": "ReactShim"
+    },
+    "debug": {
+      "all": false,
+      "basic": false
+    },
+    "exportInterfaces": false
+  }
+}
