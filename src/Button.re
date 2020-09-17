@@ -1,6 +1,8 @@
+type poly = [ | `foo | `bar ];
+
 [@react.component]
 let make =
-  React.forwardRef((~children: option(React.element)=?, forwardedRef) => {
+  React.forwardRef((~children: option(React.element)=?, ~poly: option(poly)=?, forwardedRef) => {
     <button
       ref=?{
         forwardedRef
